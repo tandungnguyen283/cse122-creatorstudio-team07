@@ -1,0 +1,8 @@
+- Nhóm có sử dụng hỗ trợ từ AI ( claude, gemini )
+- Promt chính: Hãy đọc cấu trúc và mã nguồn hiện có của dự án CreatorStudio. Hỗ trợ kiểm tra, sửa các lỗi trong giao diện và luồng xử lý; khi chỉnh sửa, giữ nguyên form code và kiểu code đang dùng, chỉ thay đổi những phần cần thiết. Sau khi sửa, giải thích thay đổi và đề xuất cách kiểm tra lại.
+- Phần ai sinh ra: hỗ trợ fix code, sửa chỉnh chu, chỉ giữ những phần đúng với quá trình làm bài.
+  -phần sinh viên chỉnh sửa: sửa lại vào đúng luồng code trong file, và dựa vào đó để làm các mục khác tương tự
+  -lỗi AI gặp phải: code vẫn chưa rõ( kiểu chưa logic giữa các phần khác như file html và js thì vẫn chưa liên kết hoàn toàn với nhau, vẫn bị lỗi vài chỗ ở dao diện
+  -cách sinh viên kiểm chứng: dựa vào chạy thử và check
+  -cách sinh viên kiểm chứng: dựa vào đó thì sẽ hiểu ra cách xây dựng các lớp class sao cho tiện( kiểu tối ưu), và những hàm bên js viết sao cho dễ nhìn dễ hiểu
+  -tính năng nào chỉ mock, tính năng nào gọi API thật: Các chức năng AI hiện chỉ mock, không gửi prompt đến mô hình AI thật: chúng dùng quy tắc, từ khóa và từ điển có sẵn trong ai.js và data.js. Các thao tác dữ liệu cũng dùng dữ liệu mẫu/localStorage và API giả lập có độ trễ trong store.js. Mình không thấy phần nào gọi API backend hoặc dịch vụ AI thật trong các luồng này
