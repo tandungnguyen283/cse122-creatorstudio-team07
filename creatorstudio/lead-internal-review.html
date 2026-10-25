@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duyệt nội bộ – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="lead">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Duyệt nội bộ</h1>
+      <p>Kiểm tra phiên bản của nhà thiết kế trước khi gửi cho khách hàng.</p>
+    </hgroup>
+    <div class="actions">
+      <label for="projectSelect" class="sr-only">Dự án</label>
+      <select id="projectSelect" aria-label="Chọn dự án"></select>
+    </div>
+  </header>
+
+  <div class="grid" style="grid-template-columns: 280px 1fr; align-items:start" id="irGrid">
+    <section aria-labelledby="qTitle">
+      <h2 id="qTitle">Hàng chờ review</h2>
+      <div id="queue"></div>
+    </section>
+    <section aria-labelledby="dTitle">
+      <h2 id="dTitle" class="sr-only">Chi tiết review</h2>
+      <div id="detail"></div>
+    </section>
+  </div>
+</main>
+
+<div class="modal-back" id="returnModal" role="dialog" aria-modal="true" aria-labelledby="rtTitle">
+  <form class="modal" id="returnForm" novalidate>
+    <h2 id="rtTitle">Trả lại nhà thiết kế</h2>
+    <div class="field">
+      <label for="rtReason">Cần sửa gì? *</label>
+      <textarea id="rtReason" required minlength="10" style="min-height:90px"></textarea>
+      <small class="field-error"></small>
+    </div>
+    <footer class="modal-actions">
+      <button type="button" class="btn" data-close>Hủy</button>
+      <button type="submit" class="btn danger">Trả lại</button>
+    </footer>
+  </form>
+</div>
+
+<style>
+  @media (max-width: 800px) { #irGrid { grid-template-columns: 1fr !important; } }
+  .vitem { width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .6rem .7rem; margin-bottom: .5rem; cursor: pointer; font: inherit; display: flex; gap: .6rem; align-items: center; }
+  .vitem[aria-pressed="true"] { border-color: var(--brand); background: var(--brand-soft); }
+  .vitem .dot { width: 34px; height: 34px; border-radius: 8px; flex: none; }
+</style>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/lead-internal-review.js"></script>
+</body>
+</html>

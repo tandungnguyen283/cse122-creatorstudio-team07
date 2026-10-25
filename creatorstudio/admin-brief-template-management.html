@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template brief – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="admin">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Template brief</h1>
+      <p>Quản lý mẫu brief để khách hàng khai báo đầy đủ ngay từ đầu.</p>
+    </hgroup>
+    <div class="actions"><button class="btn primary" id="newTpl">+ Template mới</button></div>
+  </header>
+
+  <search class="toolbar">
+    <label for="q" class="sr-only">Tìm template</label>
+    <input type="search" id="q" placeholder="Tìm template…">
+    <label for="stFilter" class="sr-only">Lọc trạng thái</label>
+    <select id="stFilter"><option value="">Tất cả</option><option value="on">Đang dùng</option><option value="off">Vô hiệu hóa</option></select>
+  </search>
+
+  <div id="tplList"></div>
+</main>
+
+<div class="modal-back" id="tplModal" role="dialog" aria-modal="true" aria-labelledby="tmTitle">
+  <form class="modal" id="tplForm" novalidate>
+    <h2 id="tmTitle">Template mới</h2>
+    <div class="field">
+      <label for="tName">Tên template *</label>
+      <input id="tName" type="text" required minlength="5">
+      <small class="field-error"></small>
+    </div>
+    <div class="field">
+      <label for="tFields">Các trường * <span class="hint">(cách nhau bằng dấu phẩy, tối thiểu 2)</span></label>
+      <textarea id="tFields" required style="min-height:80px" placeholder="Mục tiêu, Đối tượng, Hạn chót"></textarea>
+      <small class="field-error"></small>
+    </div>
+    <footer class="modal-actions">
+      <button type="button" class="btn" data-close>Hủy</button>
+      <button type="submit" class="btn primary">Lưu</button>
+    </footer>
+  </form>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/admin-brief-template-management.js"></script>
+</body>
+</html>

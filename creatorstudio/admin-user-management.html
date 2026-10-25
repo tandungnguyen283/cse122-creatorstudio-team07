@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Người dùng – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="admin">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Người dùng</h1>
+      <p>Tạo tài khoản, đổi vai trò và vô hiệu hóa người dùng.</p>
+    </hgroup>
+    <div class="actions"><button class="btn primary" id="newUser">+ Thêm người dùng</button></div>
+  </header>
+
+  <search class="toolbar">
+    <label for="q" class="sr-only">Tìm người dùng</label>
+    <input type="search" id="q" placeholder="Tìm theo tên hoặc email…">
+    <label for="roleFilter" class="sr-only">Lọc vai trò</label>
+    <select id="roleFilter">
+      <option value="">Tất cả vai trò</option><option value="client">Khách hàng</option><option value="designer">Nhà thiết kế</option><option value="lead">Creative Lead</option><option value="admin">Quản trị viên</option>
+    </select>
+    <label for="stFilter" class="sr-only">Lọc trạng thái</label>
+    <select id="stFilter"><option value="">Mọi trạng thái</option><option value="active">Hoạt động</option><option value="disabled">Vô hiệu hóa</option></select>
+  </search>
+
+  <section class="card" aria-label="Danh sách người dùng"><div id="userTable"></div></section>
+</main>
+
+<div class="modal-back" id="userModal" role="dialog" aria-modal="true" aria-labelledby="umTitle">
+  <form class="modal" id="userForm" novalidate>
+    <h2 id="umTitle">Thêm người dùng</h2>
+    <div class="field">
+      <label for="uName">Họ tên *</label>
+      <input id="uName" type="text" required minlength="3">
+      <small class="field-error"></small>
+    </div>
+    <div class="field">
+      <label for="uEmail">Email *</label>
+      <input id="uEmail" type="email" data-type="email" required>
+      <small class="field-error"></small>
+    </div>
+    <div class="field">
+      <label for="uRole">Vai trò *</label>
+      <select id="uRole" required>
+        <option value="">— Chọn —</option><option value="client">Khách hàng</option><option value="designer">Nhà thiết kế</option><option value="lead">Creative Lead</option><option value="admin">Quản trị viên</option>
+      </select>
+      <small class="field-error"></small>
+    </div>
+    <footer class="modal-actions">
+      <button type="button" class="btn" data-close>Hủy</button>
+      <button type="submit" class="btn primary">Lưu</button>
+    </footer>
+  </form>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/admin-user-management.js"></script>
+</body>
+</html>

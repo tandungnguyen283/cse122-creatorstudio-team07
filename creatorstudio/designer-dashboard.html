@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng điều khiển nhà thiết kế – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="designer">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Bảng điều khiển</h1>
+      <p>Việc cần làm, phiên bản đang chờ và góp ý mới từ khách hàng.</p>
+    </hgroup>
+  </header>
+
+  <div class="grid cols-4" id="stats" aria-label="Thống kê"></div>
+
+  <div class="grid cols-2" style="margin-top:1rem">
+    <section class="card" aria-labelledby="taskTitle">
+      <header style="display:flex;justify-content:space-between;gap:.5rem;flex-wrap:wrap">
+        <h2 id="taskTitle">Việc của tôi</h2>
+        <div>
+          <label for="taskFilter" class="sr-only">Lọc việc</label>
+          <select id="taskFilter" style="width:auto">
+            <option value="">Tất cả</option>
+            <option value="todo">Cần làm</option>
+            <option value="doing">Đang làm</option>
+            <option value="review">Chờ review</option>
+            <option value="done">Hoàn thành</option>
+          </select>
+        </div>
+      </header>
+      <div id="taskList"></div>
+    </section>
+
+    <section class="card" aria-labelledby="fbTitle">
+      <h2 id="fbTitle">Góp ý đang mở</h2>
+      <div id="feedbackList"></div>
+      <a class="btn sm" href="designer-version-management.html" style="margin-top:.6rem">Đi tới quản lý phiên bản</a>
+    </section>
+  </div>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/pages/designer-dashboard.js"></script>
+</body>
+</html>

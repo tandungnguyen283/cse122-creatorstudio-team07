@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Brief – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="client">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Creative Brief</h1>
+      <p>Mô tả ý tưởng bằng lời, AI sẽ giúp chuyển thành brief có cấu trúc.</p>
+    </hgroup>
+    <div class="actions">
+      <label for="projectSelect" class="sr-only">Dự án</label>
+      <select id="projectSelect" aria-label="Chọn dự án"></select>
+    </div>
+  </header>
+
+  <div class="grid cols-2">
+    <section class="ai-panel" aria-labelledby="aiTitle" style="align-self:start">
+        <h3 id="aiTitle"><span aria-hidden="true">✨</span> Brief Structurer (AI)</h3>
+        <div class="field">
+          <label for="freeText">Mô tả tự do</label>
+          <textarea id="freeText" required minlength="25" placeholder="Ví dụ: Tôi cần logo và danh thiếp cho quán cà phê, phong cách tối giản và ấm áp, dành cho sinh viên. Ngân sách 20 triệu, cần xong trước 15/11."></textarea>
+          <small class="field-error" id="freeTextErr" aria-live="polite"></small>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="runAI" type="button">Cấu trúc hóa bằng AI</button>
+          <button class="btn" id="fillSample" type="button">Điền ví dụ</button>
+        </div>
+        <div id="aiOut" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="formTitle">
+      <form class="card" id="briefForm" novalidate>
+        <h2 id="formTitle">Nội dung brief <span class="badge" id="editBadge" hidden>Đang sửa</span></h2>
+        <div class="field">
+          <label for="fTemplate">Mẫu brief <span class="hint">(do quản trị viên cấu hình)</span></label>
+          <select id="fTemplate"></select>
+        </div>
+        <div class="field">
+          <label for="fTitle">Tiêu đề *</label>
+          <input id="fTitle" name="title" type="text" required minlength="5">
+          <small class="field-error"></small>
+        </div>
+        <div class="field" data-tpl="Mục tiêu">
+          <label for="fGoal">Mục tiêu *</label>
+          <textarea id="fGoal" name="goal" required minlength="10" style="min-height:70px"></textarea>
+          <small class="field-error"></small>
+        </div>
+        <div class="field" data-tpl="Đối tượng">
+          <label for="fAudience">Đối tượng *</label>
+          <input id="fAudience" name="audience" type="text" required>
+          <small class="field-error"></small>
+        </div>
+        <div class="form-row">
+          <div class="field" data-tpl="Sản phẩm bàn giao">
+            <label for="fDeliverables">Sản phẩm bàn giao * <span class="hint">(cách nhau bằng dấu phẩy)</span></label>
+            <input id="fDeliverables" name="deliverables" type="text" required>
+            <small class="field-error"></small>
+          </div>
+          <div class="field" data-tpl="Phong cách">
+            <label for="fStyle">Phong cách <span class="hint">(cách nhau bằng dấu phẩy)</span></label>
+            <input id="fStyle" name="style" type="text">
+            <small class="field-error"></small>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field" data-tpl="Ngân sách">
+            <label for="fBudget">Ngân sách (VNĐ)</label>
+            <input id="fBudget" name="budget" type="text">
+            <small class="field-error"></small>
+          </div>
+          <div class="field" data-tpl="Hạn chót">
+            <label for="fDeadline">Hạn chót *</label>
+            <input id="fDeadline" name="deadline" type="date" required data-future="1">
+            <small class="field-error"></small>
+          </div>
+        </div>
+        <div id="extraFields"></div>
+        <div class="actions">
+          <button class="btn" type="submit" data-mode="draft">Lưu nháp</button>
+          <button class="btn primary" type="submit" data-mode="submit">Gửi brief</button>
+          <button class="btn" type="button" id="resetForm">Làm mới</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <section style="margin-top:1.5rem" aria-labelledby="listTitle">
+    <h2 id="listTitle">Brief của dự án</h2>
+    <div id="briefList"></div>
+  </section>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/ai.js"></script>
+<script src="assets/js/pages/client-creative-brief.js"></script>
+</body>
+</html>
