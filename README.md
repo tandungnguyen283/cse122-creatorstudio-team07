@@ -55,7 +55,7 @@ CreatorStudio được xây dựng nhằm tập trung brief, phiên bản thiế
   2. **Feedback Summarizer** – hỗ trợ tổng hợp phản hồi.  
   3. **Mood Keyword Assistant** – hỗ trợ gợi ý từ khóa moodboard.  
   Các tính năng AI trong bản này được mô phỏng ở phía trình duyệt, không phải dịch vụ AI trực tuyến thực tế.
-- **Trạng thái tải và lỗi mô phỏng:** Có thể kiểm thử trạng thái lỗi API bằng tham số `?fail=1` và lỗi AI bằng `?aifail=1` trên URL của trang có chức năng tương ứng.
+
 
 ## 5. Công nghệ sử dụng
 
