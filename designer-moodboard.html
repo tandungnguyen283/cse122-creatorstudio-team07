@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moodboard – CreatorStudio</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-role="designer">
+<main id="main" class="main">
+  <header class="page-head">
+    <hgroup>
+      <h1>Moodboard</h1>
+      <p>Tập hợp từ khóa, bảng màu và hình ảnh tham chiếu cho dự án.</p>
+    </hgroup>
+    <div class="actions">
+      <label for="projectSelect" class="sr-only">Dự án</label>
+      <select id="projectSelect" aria-label="Chọn dự án"></select>
+      <button class="btn primary" id="newBoard">+ Moodboard mới</button>
+    </div>
+  </header>
+
+  <div id="boardTabs" class="tabs" role="tablist" aria-label="Moodboard của dự án"></div>
+  <div id="boardArea"></div>
+</main>
+
+<div class="modal-back" id="tileModal" role="dialog" aria-modal="true" aria-labelledby="tmTitle">
+  <form class="modal" id="tileForm" novalidate>
+    <h2 id="tmTitle">Thêm ô tham chiếu</h2>
+    <div class="field">
+      <label for="tLabel">Nhãn *</label>
+      <input id="tLabel" type="text" required minlength="3">
+      <small class="field-error"></small>
+    </div>
+    <div class="field">
+      <label for="tColor">Màu nền</label>
+      <input id="tColor" type="color" value="#6b8f71" style="width:80px;height:40px;padding:2px">
+    </div>
+    <footer class="modal-actions">
+      <button type="button" class="btn" data-close>Hủy</button>
+      <button type="submit" class="btn primary">Thêm</button>
+    </footer>
+  </form>
+</div>
+
+<div class="modal-back" id="boardModal" role="dialog" aria-modal="true" aria-labelledby="bmTitle">
+  <form class="modal" id="boardForm" novalidate>
+    <h2 id="bmTitle">Moodboard mới</h2>
+    <div class="field">
+      <label for="bTitle">Tên moodboard *</label>
+      <input id="bTitle" type="text" required minlength="3">
+      <small class="field-error"></small>
+    </div>
+    <footer class="modal-actions">
+      <button type="button" class="btn" data-close>Hủy</button>
+      <button type="submit" class="btn primary">Tạo</button>
+    </footer>
+  </form>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/ai.js"></script>
+<script src="assets/js/pages/designer-moodboard.js"></script>
+</body>
+</html>
