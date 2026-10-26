@@ -6,6 +6,8 @@ Nguồn: Figma "BTL – CreatorStudio – Quản lý dự án sáng tạo và ph
 
 Bố cục chung của các màn hình sau đăng nhập: header (logo CreatorStudio, nút Menu, badge vai trò, tên người dùng, nút Đăng xuất) và sidebar điều hướng theo vai trò.
 
+Xem trang theo Node ID bằng ấn vào ảnh trong file Figma, nhìn vào đường link, Node ID là số phía sau "node-id="
+
 ## Tổng quan
 
 | # | Nhóm | Màn hình / trạng thái | Node ID |
