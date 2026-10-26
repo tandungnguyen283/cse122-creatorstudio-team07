@@ -1,6 +1,6 @@
 # Screen Inventory – CreatorStudio
 
-Nguồn: Figma "BTL – CreatorStudio – Quản lý dự án sáng tạo và phản hồi phiên bản" (file key `c6cTnGjFgVPaBk24xZ0xNR`). Gồm 2 trang: Page 1 (node `0:1`: Giao diện chung, Khách hàng, Nhà thiết kế) và Page 2 (node `40:26`: Creative Lead, Quản trị viên).
+Nguồn: Figma "BTL – CreatorStudio – Quản lý dự án sáng tạo và phản hồi phiên bản" . Gồm 2 trang: Page 1 (node `0:1`: Giao diện chung, Khách hàng, Nhà thiết kế) và Page 2 (node `40:26`: Creative Lead, Quản trị viên).
 
 Ứng dụng: nền tảng quản lý brief, phiên bản thiết kế và phản hồi giữa khách hàng và nhà thiết kế. Bốn vai trò: Khách hàng, Nhà thiết kế, Creative Lead, Quản trị viên (file Figma có màn hình của cả 4 vai trò).
 
