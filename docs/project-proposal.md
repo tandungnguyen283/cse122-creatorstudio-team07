@@ -73,45 +73,7 @@ và duyệt phiên bản. Dự án đặt mục tiêu:
 -   Quản lý mẫu brief.
 -   Cấu hình các thông tin và thiết lập dự án.
 
-## 5. Phạm vi chức năng
-
-Các chức năng dự kiến của prototype bao gồm:
-
-  -----------------------------------------------------------------------
-  Nhóm chức năng                      Nội dung chính
-  ----------------------------------- -----------------------------------
-  Tài khoản và hồ sơ                  Đăng nhập, đăng ký, khôi phục mật
-                                      khẩu, hồ sơ và cài đặt
-
-  Quản lý dự án                       Xem tổng quan, tạo/sửa dự án, lọc
-                                      trạng thái, lưu trữ và khôi phục
-
-  Creative Brief                      Nhập yêu cầu, mục tiêu, sản phẩm
-                                      bàn giao, thời hạn và gửi duyệt
-
-  Quản lý phiên bản                   Xem phiên bản, xác định bản mới
-                                      nhất, theo dõi trạng thái duyệt
-
-  Phản hồi                            Gửi và theo dõi bình luận, phân
-                                      biệt phản hồi khách hàng và ghi chú
-                                      nội bộ
-
-  Quản lý nhiệm vụ                    Giao việc, chọn người nhận, đặt
-                                      hạn, mức ưu tiên và trạng thái
-
-  Bảng tiến độ                        Hiển thị công việc theo các cột Cần
-                                      làm, Đang làm, Chờ review và Hoàn
-                                      thành
-
-  Quản trị                            Quản lý người dùng, mẫu brief và
-                                      thiết lập dự án
-
-  Trải nghiệm AI                      Hỗ trợ cấu trúc brief, tổng hợp
-                                      phản hồi và gợi ý từ khóa moodboard
-  -----------------------------------------------------------------------
-
-
-## 6. Phân công nhóm đề xuất
+## 5. Phân công nhóm đề xuất
 
   -----------------------------------------------------------------------
   Thành viên                          Nhiệm vụ đề xuất
@@ -127,7 +89,7 @@ Các chức năng dự kiến của prototype bao gồm:
                                       hợp/kiểm thử chung
   -----------------------------------------------------------------------
 
-## 7. Kiểm thử và tiêu chí nghiệm thu
+## 6. Kiểm thử và tiêu chí nghiệm thu
 
 Dự án được xem là đạt yêu cầu prototype khi:
 
@@ -145,7 +107,7 @@ Dự án được xem là đạt yêu cầu prototype khi:
 -   Báo cáo nêu trung thực các chức năng đã hoàn thành, chức năng mock
     và chức năng gọi API thật.
 
-## 8. Rủi ro và hướng xử lý
+## 7. Rủi ro và hướng xử lý
 
   -----------------------------------------------------------------------
   Rủi ro                              Hướng xử lý
@@ -169,7 +131,7 @@ Dự án được xem là đạt yêu cầu prototype khi:
   phỏng                               giao diện và báo cáo
   -----------------------------------------------------------------------
 
-## 9. Kết quả mong đợi
+## 8. Kết quả mong đợi
 
 Sau khi hoàn thành, CreatorStudio sẽ là một prototype web minh họa quy
 trình quản lý dự án sáng tạo tập trung, từ tiếp nhận yêu cầu, phân công
