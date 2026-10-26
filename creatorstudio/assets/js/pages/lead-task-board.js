@@ -9,14 +9,26 @@
 
   const designers = () => CS.store.list("users").filter((u) => u.role === "designer" && u.status === "active");
 
-  if (!pid) { CS.ui.state($("board"), "empty", { icon: "📁", msg: "Bạn chưa phụ trách dự án nào." }); $("newTask").disabled = true; $("briefQueue").hidden = true; return; }
+  if (!pid) { CS.ui.state($("board"), "empty", { icon: "📁", msg: "Bạn chưa phụ trách dự án nào." }); $("newTask").disabled = true; $("briefQueue").hidden = true; $("projectDesigner").hidden = true; return; }
   CS.ui.projectPicker(user, $("projectSelect"), (id) => { pid = id; load(); });
   $("assigneeFilter").innerHTML = '<option value="">Tất cả người nhận</option>' + designers().map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join("");
   $("tAssignee").innerHTML = '<option value="">— Chọn —</option>' + designers().map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join("");
 
+  /* Lead gán designer phụ trách: designer chỉ thấy dự án khi designerId trùng với mình */
+  function renderDesigner() {
+    const proj = CS.store.get("projects", pid);
+    $("projDesigner").innerHTML = '<option value="">— Chưa gán —</option>' + designers().map((d) => `<option value="${d.id}">${esc(d.name)}</option>`).join("");
+    $("projDesigner").value = proj && proj.designerId ? proj.designerId : "";
+    $("designerHint").textContent = proj && proj.designerId ? "" : "Chưa có designer: designer sẽ chưa thấy dự án này.";
+  }
+  $("saveDesigner").onclick = () => {
+    CS.store.update("projects", pid, { designerId: $("projDesigner").value || null });
+    CS.ui.toast("Đã cập nhật nhà thiết kế phụ trách.", "ok"); renderDesigner();
+  };
+
   function load() {
     CS.ui.state($("board"), "loading");
-    CS.api.list("tasks", (t) => t.projectId === pid && !t.archived).then(() => { renderBriefs(); renderBoard(); })
+    CS.api.list("tasks", (t) => t.projectId === pid && !t.archived).then(() => { renderDesigner(); renderBriefs(); renderBoard(); })
       .catch((e) => CS.ui.state($("board"), "error", { msg: e.message, onRetry: load }));
   }
 
@@ -91,6 +103,9 @@
     const data = { title: $("tTitle").value.trim(), assigneeId: $("tAssignee").value, priority: $("tPriority").value, due: $("tDue").value };
     if (editingId) CS.store.update("tasks", editingId, data);
     else CS.store.add("tasks", Object.assign(data, { projectId: pid, status: "todo", archived: false }));
+    /* Giao việc cho designer khi dự án chưa có designer: tự gán để họ thấy được dự án */
+    const proj = CS.store.get("projects", pid);
+    if (proj && !proj.designerId && data.assigneeId) { CS.store.update("projects", pid, { designerId: data.assigneeId }); renderDesigner(); }
     CS.ui.closeModal("taskModal"); CS.ui.toast(editingId ? "Đã cập nhật công việc." : "Đã giao việc.", "ok"); renderBoard();
   };
 
