@@ -54,44 +54,4 @@ Kết quả bàn giao - Các trang Lead và Admin hoạt động theo phạm vi 
 thống nhất. - Luồng review nội bộ và tổng hợp phản hồi có thể trình
 diễn. - Điều hướng giữa các khu vực không bị đứt gãy. - Báo cáo kiểm thử
 tích hợp và danh sách vấn đề còn tồn tại.
-4. Công việc chung của cả nhóm
-  Công việc         Thành viên chính  Thành viên phối   Kết quả bàn giao
-                                      hợp               
-  Thống nhất cấu    Thành viên 3      Thành viên 1, 2   Cấu trúc dự án
-  trúc thư mục và                                       nhất quán
-  quy tắc đặt tên                                       
-
-  Thống nhất màu    Thành viên 2      Thành viên 1, 3   Quy tắc giao diện
-  sắc, kiểu chữ,                                        dùng chung
-  nút và thẻ trạng
-  thái                                                  
-
-  Chuẩn hóa dữ liệu Thành viên 3      Thành viên 1, 2   Cấu trúc dữ liệu
-  projects,                                           thống nhất
-  briefs,
-  versions,
-  comments,
-  tasks, users                                      
-
-  Kiểm tra          Cả 3              Cả 3              Giao diện desktop
-  responsive                                            và mobile
-
-  Kiểm thử luồng    Cả 3              Cả 3              Checklist và kết
-  theo vai trò                                          quả kiểm thử
-
-  Kiểm tra các liên Thành viên 3      Thành viên 1, 2   Danh sách lỗi và
-  kết và lỗi                                            kết quả sửa
-  Console                                               
-
-  Viết README và    Thành viên 1      Thành viên 2, 3   Bộ tài liệu dự án
-  tài liệu đề
-  xuất/kiểm kê màn
-  hình                                                  
-
-  Chuẩn bị demo và  Cả 3              Cả 3              Kịch bản và minh
-  video trình bày                                       chứng
-
-  Rà soát khai báo  Cả 3              Cả 3              Bản khai báo phản
-  sử dụng AI                                            ánh đúng cách
-                                                    triển khai
-5. Link Trello phân công : https://trello.com/invite/b/6ad070ac2c77c6fadbbfaf70/ATTI0f58867b6038d56b9ff2eba78a086846633660C6/creatorstudio
+4. Link Trello phân công : https://trello.com/invite/b/6ad070ac2c77c6fadbbfaf70/ATTI0f58867b6038d56b9ff2eba78a086846633660C6/creatorstudio
