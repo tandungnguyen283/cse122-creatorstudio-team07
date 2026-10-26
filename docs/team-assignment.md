@@ -19,11 +19,11 @@ tra dữ liệu đầu vào và thông báo kết quả. - Xây dựng luồng x
 bản, gửi bình luận, duyệt hoặc yêu cầu chỉnh sửa. - Kiểm tra sự nhất
 quán trạng thái giữa brief, phiên bản và phản hồi. - Viết hoặc cập nhật
 phần hướng dẫn sử dụng cho các trang khách hàng.
-
 Kết quả bàn giao - Các trang Client hiển thị đúng trên desktop và
 mobile. - Các biểu mẫu và nút tương tác chính hoạt động theo phạm vi dự
 án. - Danh sách lỗi đã phát hiện và cách khắc phục. - Ảnh chụp màn hình
 hoặc video minh chứng.
+
 -Nguyễn Minh Hiếu -- Phụ trách Designer và quản lý phiên bản
 Nhiệm vụ chính - Xây dựng và hoàn thiện các trang: -
 designer-dashboard.html - designer-moodboard.html -
@@ -32,12 +32,12 @@ và trạng thái tiến độ. - Xây dựng các thành phần moodboard và q
 phiên bản. - Phối hợp chuẩn hóa dữ liệu phiên bản để Client và Lead có
 thể sử dụng thống nhất. - Triển khai hoặc mô phỏng Mood Keyword
 Assistant nếu được phân công.
-
 Kết quả bàn giao - Các trang Designer có bố cục nhất quán,
 responsive. - Danh sách phiên bản thể hiện trạng thái rõ ràng và xác
 định được phiên bản mới nhất. - Moodboard và các thao tác liên quan hoạt
 động theo phạm vi đã thống nhất. - Kiểm thử và minh chứng cho các luồng
 chính.
+
 -Nguyễn Xuân Điều -- Phụ trách Lead, Admin và tích hợp chung
 Nhiệm vụ chính - Xây dựng và hoàn thiện các trang: -
 lead-task-board.html - lead-internal-review.html -
