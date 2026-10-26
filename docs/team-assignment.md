@@ -1,22 +1,18 @@
 Team Assignment -- CreatorStudio
 1. Thông tin nhóm
-- Tên đề tài: BTL-30 -- CreatorStudio -- Quản lý dự án sáng tạo và
-  phản hồi phiên bản
+- Tên đề tài: BTL-30 -- CreatorStudio -- Quản lý dự án sáng tạo và phản hồi phiên bản
 - Học phần: Phát triển ứng dụng Web cơ bản -- CSE122
 - Quy mô nhóm: 3 thành viên
-- Mục tiêu: Phân công công việc rõ ràng, bảo đảm các màn hình và
-  chức năng được phát triển đồng bộ, có kiểm thử và minh chứng.
+- Mục tiêu: Phân công công việc rõ ràng, bảo đảm các màn hình và chức năng được phát triển đồng bộ, có kiểm thử và minh chứng.
 
 2. Nguyên tắc phân công
-  1. Mỗi công việc có một người chịu trách nhiệm chính.
-  3. Người phụ trách tính năng phải tự kiểm thử trước khi bàn giao.
-  4. Các thay đổi ảnh hưởng đến nhiều màn hình cần được trao đổi trước
-   khi sửa.
-  5. Mỗi công việc cần có kết quả bàn giao cụ thể: tệp, chức năng, kiểm
-   thử và minh chứng.
+- Mỗi công việc có một người chịu trách nhiệm chính.
+- Người phụ trách tính năng phải tự kiểm thử trước khi bàn giao.
+- Các thay đổi ảnh hưởng đến nhiều màn hình cần được trao đổi trước khi sửa.
+- Mỗi công việc cần có kết quả bàn giao cụ thể: tệp, chức năng, kiểm thử và minh chứng.
 3. Phân công theo thành viên
 -Nguyễn Tấn Dũng -- Phụ trách Client và luồng duyệt phiên bản
-Nhiệm vụ chính - Xây dựng và hoàn thiện các trang: -
+Nhiệm vụ chính- Xây dựng và hoàn thiện các trang: -
 client-project-overview.html - client-creative-brief.html -
 client-review-versions.html - Thiết kế biểu mẫu Creative Brief, kiểm
 tra dữ liệu đầu vào và thông báo kết quả. - Xây dựng luồng xem phiên
