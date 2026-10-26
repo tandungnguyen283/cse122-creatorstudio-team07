@@ -10,7 +10,9 @@ Team Assignment -- CreatorStudio
 - Người phụ trách tính năng phải tự kiểm thử trước khi bàn giao.
 - Các thay đổi ảnh hưởng đến nhiều màn hình cần được trao đổi trước khi sửa.
 - Mỗi công việc cần có kết quả bàn giao cụ thể: tệp, chức năng, kiểm thử và minh chứng.
+
 3. Phân công theo thành viên
+  
 -Nguyễn Tấn Dũng -- Phụ trách Client và luồng duyệt phiên bản
 Nhiệm vụ chính- Xây dựng và hoàn thiện các trang: -
 client-project-overview.html - client-creative-brief.html -
