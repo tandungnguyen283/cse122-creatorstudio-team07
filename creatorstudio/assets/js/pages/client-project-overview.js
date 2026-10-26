@@ -108,7 +108,8 @@
     if (!CS.ui.validate($("projectForm"))) return;
     const data = { name: $("pName").value.trim(), description: $("pDesc").value.trim(), deadline: $("pDeadline").value };
     if (editingId) CS.store.update("projects", editingId, data);
-    else CS.store.add("projects", Object.assign(data, { clientId: user.id, leadId: "u3", designerId: null, status: "active", settings: { allowComments: true, requireApproval: true, notifyEmail: true, maxRevisions: 3 } }));
+    else { const rec = CS.store.add("projects", Object.assign(data, { clientId: user.id, leadId: "u3", designerId: null, status: "active", settings: { allowComments: true, requireApproval: true, notifyEmail: true, maxRevisions: 3 } }));
+      CS.ui.setProjectId(rec.id); /* dự án mới thành dự án đang chọn ở các trang khác */ }
     CS.ui.closeModal("projectModal"); CS.ui.toast(editingId ? "Đã cập nhật dự án." : "Đã tạo dự án.", "ok"); render();
   };
   /* Lọc trên dữ liệu đã có: không hiện skeleton/độ trễ mỗi lần gõ phím */
