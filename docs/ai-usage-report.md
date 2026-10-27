@@ -1,6 +1,6 @@
 - Nhóm có sử dụng hỗ trợ từ AI ( claude, gemini )
 - Promt chính: Hãy đọc cấu trúc và mã nguồn hiện có của dự án CreatorStudio. Hỗ trợ kiểm tra, sửa các lỗi trong giao diện và luồng xử lý; khi chỉnh sửa, giữ nguyên form code và kiểu code đang dùng, chỉ thay đổi những phần cần thiết. Sau khi sửa, giải thích thay đổi và đề xuất cách kiểm tra lại.
-- Phần ai sinh ra: hỗ trợ fix code, sửa chỉnh chu, chỉ giữ những phần đúng với quá trình làm bài.
+- Phần ai sinh ra: hỗ trợ fix code, sửa chỉnh chu, tạo chức năng ai, chỉ giữ những phần đúng với quá trình làm bài.
   -Phần sinh viên chỉnh sửa: sửa lại vào đúng luồng code trong file, và dựa vào đó để làm các mục khác tương tự
   -Lỗi AI gặp phải: code vẫn chưa rõ( kiểu chưa logic giữa các phần khác như file html và js thì vẫn chưa liên kết hoàn toàn với nhau, vẫn bị lỗi vài chỗ ở giao diện, mỗi vài chỗ sai tên biến)
   -Cách sinh viên kiểm chứng: dựa vào chạy thử và check, từ đó sẽ hiểu ra cách xây dựng các lớp class sao cho tiện( kiểu tối ưu), và những hàm bên js viết sao cho dễ nhìn dễ hiểu
